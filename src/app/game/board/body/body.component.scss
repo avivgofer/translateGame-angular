@@ -1,0 +1,16 @@
+:host {
+  height: 88%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainWord {
+  height: 15%;
+}
+.translates {
+  height: 77%;
+  width: 80%;
+}
+.inProgress {
+  margin: auto;
+}

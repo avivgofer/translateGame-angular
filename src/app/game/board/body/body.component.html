@@ -1,0 +1,16 @@
+<ng-template [ngIf]="true">
+  <div class="mainWord">
+    <app-main-word [mainWord]="mainWord"></app-main-word>
+  </div>
+  <div class="translates">
+    <app-translates-list
+      [randomWords]="randomWords"
+      (grandFun)="grandBiba($event)"
+    ></app-translates-list>
+  </div>
+</ng-template>
+
+<ng-template [ngIf]="false">
+  <mat-progress-spinner mode="indeterminate" class="inProgress">
+  </mat-progress-spinner>
+</ng-template>
